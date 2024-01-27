@@ -13,7 +13,7 @@ class User():
     - password: private string hash in MD5
     """
 
-    __password = None
+    __password__ = None
 
     def __init__(self):
         """
@@ -27,7 +27,7 @@ class User():
         """
         Password getter
         """
-        return self.__password
+        return self.__password__
 
     @password.setter
     def password(self, pwd):
@@ -38,7 +38,7 @@ class User():
         - Hash `pwd` in MD5 before assign to `__password`
         """
         if pwd is None or type(pwd) is not str:
-            self.__password = None
+            self.__password__ = None
         else:
             self._password = hashlib.md5(pwd.encode()).hexdigest().lower()
 
@@ -52,9 +52,9 @@ class User():
         """
         if pwd is None or type(pwd) is not str:
             return False
-        if self.__password is None:
+        if self.__password__ is None:
             return False
-        return hashlib.md5(pwd.encode()).hexdigest().upper() == self.__password
+        return hashlib.md5(pwd.encode()).hexdigest().lower() == self.__password__
 
 
 if __name__ == '__main__':
@@ -67,6 +67,8 @@ if __name__ == '__main__':
     user_2 = User()
     if user_1.id == user_2.id:
         print("User.id should be unique")
+    elif user_2.id is None:
+        print("New User should have an id")
 
     u_pwd = "myPassword"
     user_1.password = u_pwd
