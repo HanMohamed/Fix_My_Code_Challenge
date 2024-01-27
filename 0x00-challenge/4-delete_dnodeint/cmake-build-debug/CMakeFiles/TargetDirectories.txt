@@ -1,0 +1,3 @@
+/Users/hanosh/Library/CloudStorage/OneDrive-SeattleUniversity/ALX Repos/Fix_My_Code_Challenge/0x00-challenge/4-delete_dnodeint/cmake-build-debug/CMakeFiles/4_delete_dnodeint.dir
+/Users/hanosh/Library/CloudStorage/OneDrive-SeattleUniversity/ALX Repos/Fix_My_Code_Challenge/0x00-challenge/4-delete_dnodeint/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hanosh/Library/CloudStorage/OneDrive-SeattleUniversity/ALX Repos/Fix_My_Code_Challenge/0x00-challenge/4-delete_dnodeint/cmake-build-debug/CMakeFiles/rebuild_cache.dir
